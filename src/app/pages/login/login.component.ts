@@ -10,6 +10,9 @@ export class LoginComponent {
 
   constructor() { }
 
+  /**
+   * redirect to spotify login api
+   */
   onLoginSpotify() {
 
     const client_id = '55ced41badaa4a52839b3ceb5c1eaf32';

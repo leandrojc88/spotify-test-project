@@ -14,8 +14,8 @@ export class SpotifyService {
     private auth: AuthService
   ) { }
 
-  findTracks(search: string) {
-    return this.http.get<any>(`${environment.spotifyApiUrl}/search?q=${search}&type=track`,
+  findTracks(search: string, offset = 0, limit = 20) {
+    return this.http.get<any>(`${environment.spotifyApiUrl}/search?q=${search}&offset=${offset}&limit=${limit}&type=track`,
       { headers: this.auth.getHeaders(true) }
     );
 

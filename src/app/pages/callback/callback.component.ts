@@ -19,6 +19,9 @@ export class CallbackComponent implements OnInit {
   }
 
 
+  /**
+   * read token from spotify api and process token
+   */
   generateToken() {
     let hashParams: any = {};
     let loop

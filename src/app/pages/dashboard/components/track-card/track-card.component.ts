@@ -8,7 +8,7 @@ import { TrackSpotifyModel } from 'src/app/model/spotify';
 })
 export class TrackCardComponent implements OnInit {
 
-  @Input() track!: TrackSpotifyModel; //= { album: { album_type: "", images: [], name: "" }, name: "" };
+  @Input() track!: TrackSpotifyModel;
 
   constructor() { }
 

@@ -63,6 +63,18 @@
     height: 20px;
 }
 
+footer {
+    text-align: center;
+    font-size: x-large;
+    font-family: monospace;
+}
+
+app-root {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+}
+
 @media (min-width: 768px) {
 
     .spotify-btn {
