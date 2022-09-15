@@ -7,13 +7,17 @@ import { LoginComponent } from './pages/login/login.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { CallbackComponent } from './pages/callback/callback.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HeaderComponent } from './shared/layout/header/header.component';
+import { FooterComponent } from './shared/layout/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     DashboardComponent,
-    CallbackComponent
+    CallbackComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
