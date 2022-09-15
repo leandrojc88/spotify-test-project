@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { UriTokenSpotifyModel } from 'src/app/model/spotifyTokenData';
+import { UriTokenSpotifyModel } from 'src/app/model/spotify';
 import { AuthService } from 'src/app/shared/services/auth.service';
 
 @Component({

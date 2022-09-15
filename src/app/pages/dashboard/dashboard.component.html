@@ -1,1 +1,15 @@
-<p>dashboard works!</p>
+<main style="margin: 2rem 0">
+    <div>
+        <form class="flex flex-justify-center" [formGroup]="searchForm">
+            <input autocomplete="off" class="spotify-input sm custom-size" required formControlName="search">
+            <button class="spotify-btn-sm" (click)="onSearch()">
+                Search Spotify Tracks
+            </button>
+        </form>
+
+        <section>
+            <app-track-card *ngFor="let track of tracksList" [track]="track">
+            </app-track-card>
+        </section>
+    </div>
+</main>

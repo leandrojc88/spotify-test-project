@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +10,7 @@ import { CallbackComponent } from './pages/callback/callback.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './shared/layout/header/header.component';
 import { FooterComponent } from './shared/layout/footer/footer.component';
+import { TrackCardComponent } from './pages/dashboard/components/track-card/track-card.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +19,16 @@ import { FooterComponent } from './shared/layout/footer/footer.component';
     DashboardComponent,
     CallbackComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    TrackCardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { TrackSpotifyModel } from 'src/app/model/spotify';
 import { environment } from 'src/environments/environment';
 import { AuthService } from './auth.service';
 
