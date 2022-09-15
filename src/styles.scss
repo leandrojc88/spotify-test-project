@@ -1,1 +1,49 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --background-base: #1ed760;
+    --text-base: #000000;
+}
+
+.container {
+    margin: 0 2rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-justify-center {
+    justify-content: center;
+}
+
+.flex-aling-center {
+    align-items: center;
+}
+
+.flex-center-all {
+    justify-content: center;
+    align-items: center;
+}
+
+.spotify-btn {
+    background-color: var(--background-base);
+    color: var(--text-base);
+    border-radius: 500px;
+    font-size: inherit;
+    cursor: pointer;
+    padding-block: 14px;
+    padding-inline: 32px;
+}
+
+@media (min-width: 768px) {
+
+    .spotify-btn {
+        font-size: 14px;
+        line-height: 20px;
+        text-transform: none;
+        letter-spacing: normal;
+    }
+}
