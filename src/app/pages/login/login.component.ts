@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-login',
@@ -12,10 +13,10 @@ export class LoginComponent {
   onLoginSpotify() {
 
     const client_id = '55ced41badaa4a52839b3ceb5c1eaf32';
-    const redirect_uri = 'http://localhost:4200/callback';
+    const redirect_uri = environment.baseUrl + '/callback';
     const scope = 'user-read-private user-read-email';
 
-    let url = 'https://accounts.spotify.com/authorize';
+    let url = environment.spotifyAccountUrl + '/authorize';
     url += '?response_type=token';
     url += '&client_id=' + encodeURIComponent(client_id);
     url += '&scope=' + encodeURIComponent(scope);

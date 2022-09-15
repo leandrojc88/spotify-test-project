@@ -1,4 +1,4 @@
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 export const ACCESS_TOKEN = 'access_token';
@@ -15,7 +15,7 @@ export class AuthService {
 
   login(token: string): void {
     window.sessionStorage.removeItem(ACCESS_TOKEN)
-    window.sessionStorage.setItem(ACCESS_TOKEN, JSON.stringify(token))
+    window.sessionStorage.setItem(ACCESS_TOKEN, token)
   }
 
   logout(): void {
@@ -39,7 +39,7 @@ export class AuthService {
     });
 
     if (addAuthorization) {
-      requestOptions = requestOptions.append('Authorization', 'Bearer ' + this.getToken());
+      requestOptions = requestOptions.append('Authorization', `Bearer ${this.getToken()}`);
     }
 
     return requestOptions;
